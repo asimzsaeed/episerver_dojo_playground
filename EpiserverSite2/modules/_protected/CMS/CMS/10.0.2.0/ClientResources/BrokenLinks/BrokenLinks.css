@@ -1,0 +1,13 @@
+﻿.epi-ajaxLoader
+{
+	opacity: .5;
+	filter: alpha(opacity=50);
+	display:none;
+	z-index:1000;
+}
+
+.epi-disabledTextBox
+{
+	color: Gray;
+	background-color:#DDDDDD !important;
+}

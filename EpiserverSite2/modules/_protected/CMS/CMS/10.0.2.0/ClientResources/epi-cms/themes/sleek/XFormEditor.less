@@ -1,0 +1,26 @@
+﻿@import "variables.less";
+
+.Sleek {
+    .epi-xFormEditor {
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+            color: @link-color;
+            text-shadow: 0 0 0 transparent;
+        }
+
+        .disabled {
+            display: none;
+        }
+
+        &.dijitError .dijitTextBox {
+            border-color: @error-border-color;
+        }
+
+        &.dijitFocused .dijitTextBox  {
+            border: solid 1px @focused-border-color;
+			box-shadow: 0 0 5px 0 #acd1f4, inset 0 2px 3px 0 #efefef;
+ 			.transition-duration(.1s);
+        }
+    }
+}

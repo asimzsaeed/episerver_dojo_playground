@@ -1,0 +1,2 @@
+//>>built
+define("epi/RequireModule",["dojo/when","epi/dependency"],function(_1,_2){return {load:function(id,_3,_4){var _5=_2.resolve("epi.ModuleManager");_1(_5.startModules(id),function(){return _4(_5.getModule(id));});}};});

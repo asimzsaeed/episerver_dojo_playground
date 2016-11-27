@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/widget/overlay/ContentReferenceListOverlay",["dojo/_base/declare","dojo/_base/lang","./Property"],function(_1,_2,_3){return _1([_3],{onDrop:function(_4,_5){if(!_5||!_5.contentLink){return;}var _6=this._getRightProperty();var _7=_2.clone(this.contentModel["epi-"+_6]);if(!_7){_7=[];}_7.push(_5.contentLink);this.onValueChange({propertyName:_6,value:_7});}});});

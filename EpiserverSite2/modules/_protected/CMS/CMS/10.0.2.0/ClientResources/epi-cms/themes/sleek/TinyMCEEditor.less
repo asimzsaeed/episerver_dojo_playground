@@ -1,0 +1,38 @@
+﻿@import "variables.less";
+
+.Sleek {
+    // A bug on _CssStateMixin: It always set baseClass to domNode even if we state the stateNode
+    .epi-formsWidgetWrapper, .epi-form-container__section__row {
+        .epiTinyMCEEditor.dijitContainer {
+            display: inline-block;
+            overflow: visible; // needed for focus border
+            position: relative;
+
+            .epiTinyMCEEditor {
+                border: 1px solid @border-color;
+
+                // Overrides styles from ui.css in order to make sure we're only affecting a
+                // TinyMCE that's being displayed in one of our forms rows
+                .epi-lightSkin table.mceLayout tr.mceFirst td {
+                    border-top: 0 !important;
+                }
+                .epi-lightSkin table.mceLayout tr.mceLast td {
+                    border-bottom: 0 !important;
+                }
+
+                &.epiTinyMCEEditorFocused {
+                    .epi-focused();
+                }
+                &.epiTinyMCEEditorError {
+                    border-color: @error-border-color;
+                }
+            }
+        }
+    }
+
+    .epiTinyMCEInlineEditor {
+        .epiTinyMCEInlineEditorError {
+            border: solid 1px @error-border-color;
+        }
+    }
+}

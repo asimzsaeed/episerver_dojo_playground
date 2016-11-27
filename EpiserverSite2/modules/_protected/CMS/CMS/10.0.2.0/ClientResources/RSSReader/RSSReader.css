@@ -1,0 +1,40 @@
+﻿/******************************************************************************************
+ * RSS Reader CSS - List styling
+ *****************************************************************************************/
+
+
+.epi-articleList h4 {
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.epi-articleList li 
+{
+	border-top: 1px solid #cdcdcd;
+	margin: 0 0 0.5em 0;
+	padding-top: 0.7em;
+}
+
+.epi-articleDate {
+	font-size: 0.9em;
+	line-height: 2em;
+	color: #777;
+}
+
+.epi-articleList h4 A:link, 
+.epi-articleList h4 A:visited {
+	color: #57585a;	
+	text-decoration: none;
+}
+
+.epi-articleList h4 A:active {
+	text-decoration: none;
+}
+
+.epi-articleList h4 A:hover {
+	text-decoration: none;
+}
+
+.epi-articleList p {
+	margin-top: 0.5em;
+}

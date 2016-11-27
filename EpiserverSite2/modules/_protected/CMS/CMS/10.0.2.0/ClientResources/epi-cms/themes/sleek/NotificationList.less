@@ -1,0 +1,76 @@
+@import "variables.less";
+
+.Sleek {
+
+    .epi-notification-list {
+        background-color: #fff;
+        width: 400px;
+
+        .epi-event {
+            padding: 6px;
+
+            &__title {
+                height: 16px;
+                line-height: 1.1;
+                margin: 0;
+            }
+
+            &__message {
+                margin: 6px 0;
+
+                p {
+                    margin: 4px 0 0;
+                    word-wrap: break-word;
+                }
+
+                .epi-username {
+                    color: @turquoise5;
+                }
+            }
+        }
+
+        .epi-card-list {
+            .epi-card, .epi-focused .epi-card {
+                &--compact {
+                    &.dgrid-row,
+                    &.dgrid-row-odd {
+                        &.dgrid-selected {
+                            background: transparent;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                &--unread {
+                    &.dgrid-row {
+                        &,
+                        &.dgrid-selected {
+                            background: #fffbcb;
+                        }
+                    }
+                }
+            }
+
+            .epi-card__language-branch {
+                font-size: 11px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &.epi-keyboard-focus {
+        .epi-notification-list {
+            .epi-card-list {
+                .epi-card, .epi-focused .epi-card {
+                    &--compact {
+                        &.dgrid-row,
+                        &.dgrid-row-odd {
+                            &.dgrid-focus {
+                                box-shadow: inset 0 0 0 1px @epi-card-border-in-focus;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

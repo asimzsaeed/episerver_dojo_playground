@@ -1,0 +1,199 @@
+﻿/* Inactive Tools and Active Tools */
+.epi-editorConfig-inactiveTools, .epi-editorConfig-activeToolsRow {  
+    list-style-type: none;     
+    width: 100%;  
+    overflow:hidden;
+}
+
+/* Inactive Tools Container */
+.epi-editorConfig-inactiveTools {
+	background: white;
+	border: 1px solid #d8d8d8;
+	margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	min-height:28px;
+}
+
+/* Active Tools Container (Visual Presentaion of the Editor) */
+div.epi-editorConfig-activeTools {
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	width: 100%;
+	margin-bottom: 1em !important;
+}
+
+/* Editor Tools Row */
+.epi-editorConfig-activeToolsRow {
+	border-top: 1px solid #bebebe; 
+	margin: 0;
+	padding: 0; 
+	padding-bottom: 3px;
+	min-height:28px;
+	
+}
+
+/* Active and Inactive Tools Item */
+.epi-editorConfig-inactiveTools li, .epi-editorConfig-activeToolsRow li { 
+    background-color: White;
+    border: 1px solid #bbbbbb;
+    cursor: move;
+    float: left;
+    margin: 3px 0 0 3px;
+    min-width: 20px;
+}
+
+.epi-editorConfig-inactiveTools div, .epi-editorConfig-activeToolsRow div  {
+	width: 20px;
+	height: 22px;
+}
+
+.epi-editorConfig-activeToolsRow div  {	
+	height: 22px;
+}
+
+.epi-editorConfig-inactiveTools li.epi-editorConfig-imageLi , .epi-editorConfig-activeToolsRow li.epi-editorConfig-imageLi 
+{
+	background-color: White;
+	border: 1px solid #bbbbbb;
+	margin: 3px 0 0 3px;	
+	height: 22px;
+}
+
+/* Inactive Tools Item */
+.epi-editorConfig-inactiveTools li {
+	background-color: White;
+	border: 1px solid #bbbbbb;
+	margin: 3px 0 0 3px;
+}
+
+
+
+.epi-editorConfig-checkbox
+{
+	width:20em;
+	display: inline-block;
+	margin-right: 1em;
+	vertical-align: top;
+}
+
+.epi-float-left {
+	float: left;
+}
+
+#inactiveTable
+{
+	width: 100%;
+}
+
+#inactiveTable th{
+	width: 10em;
+	padding-top: 0.9em;
+	vertical-align: top;
+	font-weight:normal;
+}
+#inactiveTable td{
+	padding-top: 0.3em;	
+}
+
+#dialog, #editorPreview{
+	display: none;
+}
+
+/* Theme */
+.epi-formArea .mce_bold {background-position:0 0}
+.epi-formArea .mce_italic {background-position:-60px 0}
+.epi-formArea .mce_underline {background-position:-140px 0}
+.epi-formArea .mce_strikethrough {background-position:-120px 0}
+.epi-formArea .mce_undo {background-position:-160px 0}
+.epi-formArea .mce_redo {background-position:-100px 0}
+.epi-formArea .mce_cleanup {background-position:-40px 0}
+.epi-formArea .mce_bullist {background-position:-20px 0}
+.epi-formArea .mce_numlist {background-position:-80px 0}
+.epi-formArea .mce_justifyleft {background-position:-460px 0}
+.epi-formArea .mce_justifyright {background-position:-480px 0}
+.epi-formArea .mce_justifycenter {background-position:-420px 0}
+.epi-formArea .mce_justifyfull {background-position:-440px 0}
+.epi-formArea .mce_anchor {background-position:-200px 0}
+.epi-formArea .mce_indent {background-position:-400px 0}
+.epi-formArea .mce_outdent {background-position:-540px 0}
+.epi-formArea .mce_link {background-position:-500px 0}
+.epi-formArea .mce_unlink {background-position:-640px 0}
+.epi-formArea .mce_sub {background-position:-600px 0}
+.epi-formArea .mce_sup {background-position:-620px 0}
+.epi-formArea .mce_removeformat {background-position:-580px 0}
+.epi-formArea .mce_newdocument {background-position:-520px 0}
+.epi-formArea .mce_image {background-position:-380px 0}
+.epi-formArea .mce_help {background-position:-340px 0}
+.epi-formArea .mce_code {background-position:-260px 0}
+.epi-formArea .mce_hr {background-position:-360px 0}
+.epi-formArea .mce_visualaid {background-position:-660px 0}
+.epi-formArea .mce_charmap {background-position:-240px 0}
+.epi-formArea .mce_paste {background-position:-560px 0}
+.epi-formArea .mce_copy {background-position:-700px 0}
+.epi-formArea .mce_cut {background-position:-680px 0}
+.epi-formArea .mce_blockquote {background-position:-220px 0}
+.epi-formArea .mce_forecolor .mceAction {background-position:-720px 0}
+.epi-formArea .mce_backcolor .mceAction {background-position:-760px 0}
+.epi-formArea .mce_forecolorpicker {background-position:-720px 0}
+.epi-formArea .mce_backcolorpicker {background-position:-760px 0}
+
+/* Plugins */
+.epi-formArea .mce_advhr {background-position:-0px -20px}
+.epi-formArea .mce_ltr {background-position:-20px -20px}
+.epi-formArea .mce_rtl {background-position:-40px -20px}
+.epi-formArea .mce_emotions {background-position:-60px -20px}
+.epi-formArea .mce_fullpage {background-position:-80px -20px}
+.epi-formArea .mce_fullscreen {background-position:-100px -20px}
+.epi-formArea .mce_iespell {background-position:-120px -20px}
+.epi-formArea .mce_insertdate {background-position:-140px -20px}
+.epi-formArea .mce_inserttime {background-position:-160px -20px}
+.epi-formArea .mce_absolute {background-position:-180px -20px}
+.epi-formArea .mce_backward {background-position:-200px -20px}
+.epi-formArea .mce_forward {background-position:-220px -20px}
+.epi-formArea .mce_insert_layer {background-position:-240px -20px}
+.epi-formArea .mce_insertlayer {background-position:-260px -20px}
+.epi-formArea .mce_movebackward {background-position:-280px -20px}
+.epi-formArea .mce_moveforward {background-position:-300px -20px}
+.epi-formArea .mce_media {background-position:-320px -20px}
+.epi-formArea .mce_nonbreaking {background-position:-340px -20px}
+.epi-formArea .mce_pastetext {background-position:-360px -20px}
+.epi-formArea .mce_pasteword {background-position:-380px -20px}
+.epi-formArea .mce_selectall {background-position:-400px -20px}
+.epi-formArea .mce_preview {background-position:-420px -20px}
+.epi-formArea .mce_print {background-position:-440px -20px}
+.epi-formArea .mce_cancel {background-position:-460px -20px}
+.epi-formArea .mce_save {background-position:-480px -20px}
+.epi-formArea .mce_replace {background-position:-500px -20px}
+.epi-formArea .mce_search {background-position:-520px -20px}
+.epi-formArea .mce_styleprops {background-position:-560px -20px}
+.epi-formArea .mce_table {background-position:-580px -20px}
+.epi-formArea .mce_cell_props {background-position:-600px -20px}
+.epi-formArea .mce_delete_table {background-position:-620px -20px}
+.epi-formArea .mce_delete_col {background-position:-640px -20px}
+.epi-formArea .mce_delete_row {background-position:-660px -20px}
+.epi-formArea .mce_col_after {background-position:-680px -20px}
+.epi-formArea .mce_col_before {background-position:-700px -20px}
+.epi-formArea .mce_row_after {background-position:-720px -20px}
+.epi-formArea .mce_row_before {background-position:-740px -20px}
+.epi-formArea .mce_merge_cells {background-position:-760px -20px}
+.epi-formArea .mce_table_props {background-position:-980px -20px}
+.epi-formArea .mce_row_props {background-position:-780px -20px}
+.epi-formArea .mce_split_cells {background-position:-800px -20px}
+.epi-formArea .mce_template {background-position:-820px -20px}
+.epi-formArea .mce_visualchars {background-position:-840px -20px}
+.epi-formArea .mce_abbr {background-position:-860px -20px}
+.epi-formArea .mce_acronym {background-position:-880px -20px}
+.epi-formArea .mce_attribs {background-position:-900px -20px}
+.epi-formArea .mce_cite {background-position:-920px -20px}
+.epi-formArea .mce_del {background-position:-940px -20px}
+.epi-formArea .mce_ins {background-position:-960px -20px}
+.epi-formArea .mce_pagebreak {background-position:0 -40px}
+.epi-formArea .mce_spellchecker .mceAction {background-position:-540px -20px}
+.epi-formArea .mce_epidynamiccontent {background-position:-180px -40px}
+.epi-formArea .mce_epipersonalizedcontent {background-position:-240px -40px}
+.epi-formArea .mce_epilink {background-position:-200px -40px}
+.epi-formArea .mce_epiimageeditor {background-position:-220px -40px}

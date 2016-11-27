@@ -1,0 +1,52 @@
+﻿@import "variables.less";
+
+.Sleek {
+    .epi-hierarchicalList {
+        /* This class used in both child widgets: folder tree and grid content list */
+        .epi-opacity50 {
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+            opacity: 0.5;
+        }
+        /* Styles for folder tree widget */
+        .dijitTree {
+            overflow: auto;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .epi-createContentContainer {
+            text-align: center;
+        }
+        //.epi-createContentContainer
+
+        /* Styles for grid content list widget */
+        .epi-contentList {
+            .dgrid {
+                overflow: auto;
+
+                .dgrid-scroller {
+                    .dgrid-row {
+                        &.dgrid-row-odd {
+                            background-color: @epi-grid-row-odd;
+
+                            &.dgrid-selected {
+                                background-color: @epi-selected-item;
+                            }
+                        }
+                    }
+                }
+
+                .epi-missingLanguageIndicator {
+                    float: right;
+                    margin: 0 5px;
+                    max-width: 85px;
+                    min-width: 25px;
+                    text-align: right;
+                }
+            }
+            //.dgrid
+        }
+        //.epi-contentList
+    }
+    //.epi-hierarchicalList
+}

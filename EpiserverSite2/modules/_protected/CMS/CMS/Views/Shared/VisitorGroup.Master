@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import Namespace="EPiServer.Framework.Web.Mvc.Html"%>
+<%@ Import Namespace="EPiServer.Framework.Web.Resources"%>
+<%@ Import Namespace="EPiServer.Shell" %>
+<%@ Import Namespace="EPiServer.Shell.Navigation" %>
+
+<%@ Assembly Name="EPiServer.Shell.UI" %>
+<%@ Import Namespace=" EPiServer.Shell.Web.Mvc.Html"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow: auto;" >
+    <head runat="server">
+        <title runat="server"><%= Html.Translate("/shell/cms/visitorgroups/index/name")%></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+        <%= Page.ConfigureDojo(true, true, false) %>
+
+        <script type="text/javascript" src="<%= Paths.ToShellClientResource("ClientResources/dojo/dojo.js") %>"></script>
+        <%= Page.ClientResources("ShellCore") %>
+        <%= Page.ClientResources("ShellWidgets") %>
+        <%= Page.ClientResources("ShellCoreLightTheme") %>
+        <%= Page.ClientResources("ShellWidgetsLightTheme")%>
+        <%= Page.ClientResources("Navigation") %>
+        <%= Page.ClientResources("DijitWidgets", new[] { ClientResourceType.Style })%>
+        <%= Html.CssLink(EPiServer.Web.PageExtensions.ThemeUtility.GetCssThemeUrl(Page, "system.css")) %>
+        <%= Html.CssLink(EPiServer.Web.PageExtensions.ThemeUtility.GetCssThemeUrl(Page, "ToolButton.css"))%>
+
+        <!-- Shell init script -->
+
+        <%= Html.ShellAsyncInitializationScript() %>
+
+        <%= Html.ScriptResource(EPiServer.UriSupport.ResolveUrlFromUtilBySettings("javascript/episerverscriptmanager.js"))%>
+        <%= Html.ScriptResource(EPiServer.UriSupport.ResolveUrlFromUIBySettings("javascript/system.js")) %>
+        <%= Html.ScriptResource(EPiServer.UriSupport.ResolveUrlFromUIBySettings("javascript/dialog.js")) %>
+        <%= Html.ScriptResource(EPiServer.UriSupport.ResolveUrlFromUIBySettings("javascript/system.aspx")) %>
+
+        <asp:ContentPlaceHolder runat="server" id="HeaderContentRegion" />
+    </head>
+    <body class="claro epi-visitorgroup-admin-ui">
+        <form id="aspnetForm" runat="server">
+            <%= Html.AntiForgeryToken()%>
+            <asp:ContentPlaceHolder ID="FullRegion" runat="server">
+                <%= Html.GlobalMenu() %>
+                <div class="epi-padding">
+                    <div class="epi-contentArea">
+                        <asp:ValidationSummary ID="ValidationSummary" runat="server" CssClass="EP-validationSummary" ForeColor="Black" />
+                    </div>
+                    <asp:ContentPlaceHolder ID="MainRegion" runat="server"/>
+                </div>
+            </asp:ContentPlaceHolder>
+        </form>
+    </body>
+</html>

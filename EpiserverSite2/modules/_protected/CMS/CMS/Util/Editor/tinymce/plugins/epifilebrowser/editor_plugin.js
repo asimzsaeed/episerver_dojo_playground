@@ -1,0 +1,1 @@
+(function(e){e.create("tinymce.plugins.epifilebrowser",{init:function(e){e.settings.file_browser_callback=null},getInfo:function(){return{longname:"File Browser Plug-In",author:"EPiServer AB",authorurl:"http://www.episerver.com",infourl:"http://www.episerver.com",version:1}}}),e.PluginManager.add("epifilebrowser",e.plugins.epifilebrowser)})(tinymce,epiJQuery);

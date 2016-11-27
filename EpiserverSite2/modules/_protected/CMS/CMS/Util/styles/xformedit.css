@@ -1,0 +1,113 @@
+#id_matrix {
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: Silver;
+	width: 95%;
+}
+
+#id_matrix td {
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: Silver;
+	width: 490px;
+	height: 25px;
+}
+
+fieldset legend {
+    margin: 0;
+    padding: 0 0 0.8em 0;
+    }
+
+input.inputtext, textarea.inputtext, select.inputtext {
+	font-size: 1em;
+	width: 15em;
+	color: #000;
+}
+
+input.inputtextmini {
+    font-size: 1em;
+	width: 5em;
+	color: black;
+    }
+
+input.inputsmalltext {
+	font-size: 1em;
+	width: 6em;
+	color: black;
+}
+
+.toolbox {
+	margin-right: 10px;
+	height: 60px;
+	padding:0px 10px 0px 10px;
+}
+
+.toolbox .helptext {
+	padding-bottom: 5px;
+}
+
+div.xformarea {
+	position: relative;
+	margin: 5px 10px;
+	border: 1px solid #888888;
+	background-color: White;
+	overflow: hidden;
+}
+
+div.xformarea h3 {
+    font-size: 1.2em;
+    }
+
+.xformarea .editarea {
+	position: relative;
+	float: left;
+	background-color: white;
+	border-right: 1px solid #888888;	
+	overflow-y: scroll;
+}
+
+.xformarea .propertiesarea {
+	position: relative;
+	float: right;
+	background-color: white;
+	overflow-y: scroll;
+	overflow-x: auto;
+	width: 400px;
+}
+
+.xformarea .propertiesarea div.propertiesContainer {
+    padding: 5px;
+}
+
+.xformarea .editarea div.editContainer {
+    padding: 10px;
+}
+
+.xformarea .editarea div.editContainer td {
+    padding: 10px 20px;
+}
+.xformarea .editarea div.editContainer fieldset {
+    border: 1px solid #959595;
+    margin: 0 -10px;
+    padding: 5px 10px 10px 10px;
+}
+.xformarea .editarea div.editContainer fieldset legend {
+    margin-left: 5px;   
+    padding: 2px 5px;
+}
+.xformarea .editarea div.editContainer td input, .xformarea .editarea div.editContainer td label {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.xformarea .editarea hr {
+	color: #405870;
+	background-color: #405870;
+	height: 2px;
+}
+
+.epi-xForms-errorMsg .EP-systemMessage {
+    max-height: 50px;
+    _height: 50px;
+    overflow: hidden;
+}

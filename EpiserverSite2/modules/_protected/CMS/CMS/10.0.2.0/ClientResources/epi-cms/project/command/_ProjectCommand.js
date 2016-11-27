@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/project/command/_ProjectCommand",["dojo/_base/declare","dojo/_base/lang","epi/shell/command/_Command","dijit/Destroyable"],function(_1,_2,_3,_4){return _1([_3,_4],{modelPropertyToWatch:"selectedProject",_onModelChange:function(){var _5=this.model;this.set("canExecute",!!_5);if(_5){this.own(_5.watch(this.modelPropertyToWatch,_2.hitch(this,"_setCanExecute")));this._setCanExecute();}},_setCanExecute:function(){}});});

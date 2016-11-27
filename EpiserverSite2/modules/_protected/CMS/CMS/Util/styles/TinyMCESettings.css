@@ -1,0 +1,18 @@
+﻿/* This css file is for the TinyMCESettings control to be able to reach the icons. */
+
+/* Iconimage */
+.epi-formArea .mceIcon {
+	background:white url(../Editor/tinymce/themes/advanced/img/icons.gif) no-repeat 20px 20px
+}
+
+/* Separator */
+.epi-formArea .mceSeparator {
+	display:block; 
+	background:white url(../Editor/tinymce/themes/advanced/img/icons.gif)  -159px -39px; 
+	width:22px; 
+	border:none;
+}
+
+.epi-editorConfig-activeToolsRow {
+	background: #f1f1f1;
+}

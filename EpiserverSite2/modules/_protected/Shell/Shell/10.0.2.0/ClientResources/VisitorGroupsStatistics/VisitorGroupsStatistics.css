@@ -1,0 +1,142 @@
+﻿daVsaH!42.epi-visitorGroupsStatisticsGadget-block-activities {
+	margin-right: 3em !important;
+}
+
+.cms-visitorGroupsStatisticsGadget-Outside
+{
+    overflow:hidden;
+	width:100%;
+	margin:0 0 0 0;	
+}
+
+.cms-visitorGroupsStatisticsGadget-Inside
+{ 
+	overflow:hidden;
+	height:250px;
+	position:relative;
+	margin-right:20px;
+	margin-bottom:1em;
+}
+.cms-visitorGroupsStatisticsGadget-ChartImage
+{
+	position:absolute;
+	top:0px;
+	left: 0px;	
+	float:left;
+}
+
+.visitorGroupList
+{
+    display: block;
+    overflow: auto;
+    max-height: 450px;
+    width:100%;
+}
+
+.visitorGroupListItem
+{
+     display: inline-block;
+     min-height: 1.5em;
+     min-width:100px;
+     margin-right:10px;
+     vertical-align:top;
+}
+
+.epi-nowrap { white-space:nowrap;}
+
+.epi-formArea div.epi-size5 label.error 
+{
+    width: auto;
+}
+
+a.selectAllVisitorGroups
+{
+     color: Blue;
+}
+
+a.selectAllVisitorGroups:hover
+{
+     color: Gray;
+}
+
+a.unselectAllVisitorGroups
+{
+     color: Blue;    
+}
+
+a.unselectAllVisitorGroups:hover
+{
+     color: Gray;    
+}
+
+a.editMode
+{
+    color: Blue;
+}
+
+a.editMode:hover
+{
+    color: Gray;    
+}
+
+a.epi-visitorGroupStatistics-chart
+{
+    cursor: default;
+}
+
+.epi-visitorGroupStatistics-options dl { display:inline-block; }
+.epi-visitorGroupStatistics-options dl dt { float:left; clear: none; width: auto; }
+.epi-visitorGroupStatistics-options dl dt.epi-visitorGroupStatistics-options-active
+{
+    -moz-border-radius:2px 2px 2px 2px;
+    background:none repeat scroll 0 0 #4F4F4F;
+    padding:0 0.25em;
+}
+.epi-visitorGroupStatistics-options dl dt.epi-visitorGroupStatistics-options-margin
+{
+    margin-left:.5em;
+    
+}
+
+.epi-visitorGroupStatistics-options dl dt a { color:#0072BC; }
+.epi-visitorGroupStatistics-options dl dt.epi-visitorGroupStatistics-options-active a
+{
+    color:#FFFFFF;
+}
+
+.display_text_margin
+{
+    margin: 0 0.5em 0 0;
+    line-height: 1.2em;
+}
+
+.ui-daterange-popup
+{
+    border:1px solid #8D8D8D;
+    background-color:#fff;
+    padding:0.5em;
+}
+    .ui-daterange-datepickersArea
+    {
+        float:left;
+        clear:both;
+        }
+        .ui-daterange-popup .ui-daterange-datepickersArea .hasDatepicker
+        {
+            float:left;
+        }
+        .ui-daterange-popup .ui-daterange-datepickersArea .ui-daterange-startDatepicker
+        {
+            margin-right:1em;
+        }
+    .ui-daterange-popup .ui-daterange-buttonsArea
+    {
+        position:absolute;
+        bottom:.5em;
+        right:.5em;
+    }
+    
+.container_daterange 
+{
+    min-height:17px;
+}    

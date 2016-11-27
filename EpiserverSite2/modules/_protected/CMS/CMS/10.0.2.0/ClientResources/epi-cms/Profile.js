@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/Profile",["dojo/_base/lang","dojo/Deferred","dojo/when","epi/dependency","epi/shell/Profile","epi-cms/ApplicationSettings"],function(_1,_2,_3,_4,_5,_6){var _7=function(_8){return "editlanguage_"+_8.replace(":","");};_1.extend(_5,{getContentLanguage:function(_9){_9=_9||window.location.host;return _3(this.get(_7(_9)),function(_a){return _a||_6.currentContentLanguage;});},setContentLanguage:function(_b,_c){return this.set(_7(_c),_b,{location:"server"});}});return _5;});

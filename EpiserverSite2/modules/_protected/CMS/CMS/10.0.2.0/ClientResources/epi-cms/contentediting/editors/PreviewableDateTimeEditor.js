@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/contentediting/editors/PreviewableDateTimeEditor",["dojo/_base/declare","epi/datetime","epi/shell/widget/DateTimeSelectorDropDown","epi-cms/contentediting/editors/_PreviewableEditor"],function(_1,_2,_3,_4){return _1([_4],{required:false,controlParams:["required"],buildRendering:function(){this.control=new _3({datePackage:null});this.inherited(arguments);},_setLabelValueAttr:function(_5){this.inherited(arguments,[_2.toUserFriendlyHtml(_5)]);}});});

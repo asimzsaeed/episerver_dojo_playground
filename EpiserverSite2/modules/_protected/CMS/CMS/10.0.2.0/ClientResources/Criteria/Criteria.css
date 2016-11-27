@@ -1,0 +1,36 @@
+﻿.epi-criteria-intinput
+{
+    width: 6em;
+}
+
+.epi-criteria-dateinput
+{
+    width: 182px;
+}
+
+.epi-criteria-inlineblock
+{
+    margin: 2px;    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.epi-criteria-block
+{
+    padding: 2px;    
+    display: block;
+}
+
+.epi-criteria-label
+{
+    display: inline-block;
+    padding-top: 3px;
+    *padding-top: 5px; /* Dijit's text inputs are a bit higher in IE than FF */
+}
+
+.epi-criteria-grouping
+{
+    white-space: nowrap;
+    float: left;
+    padding: 2px 5px 2px 2px;
+}

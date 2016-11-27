@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/notification/command/MarkAllNotificationsAsRead",["dojo/_base/declare","epi/shell/command/_Command","epi/i18n!epi/cms/nls/episerver.cms.notification.list"],function(_1,_2,_3){return _1(_2,{showLabel:true,isAvailable:true,canExecute:true,category:"toolbarContext",label:_3.markallasread,_execute:function(){this.model.markAllAsRead();}});});

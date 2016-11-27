@@ -1,0 +1,50 @@
+﻿.cms-XFormsViewer-fieldListLabel
+{
+    vertical-align: top;
+}
+.cms-XFormsViewer-fieldList
+{
+    list-style-image: none;    
+}
+.cms-XFormsViewer-fieldItem
+{
+    
+}
+.cms-XFormsViewer-FormTitle
+{
+	padding: 1em;
+}
+.cms-XFormsViewer-FormTable
+{
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    
+}
+.cms-XFormsViewer-TableItem
+{
+    white-space: nowrap;
+}
+
+.cms-XFormsViewer-Outside
+{
+	overflow:hidden;
+	width:100%;
+	margin:0 0 0 20px;	
+}
+
+.cms-XFormsViewer-Inside
+{ 
+	overflow:hidden;
+	height:250px;
+	position:relative;
+	margin-right:20px;
+}
+.cms-XFormsViewer-ChartImage
+{
+	position:absolute;
+	top:0px;
+	right: 0px;	
+	float:right;
+	
+}

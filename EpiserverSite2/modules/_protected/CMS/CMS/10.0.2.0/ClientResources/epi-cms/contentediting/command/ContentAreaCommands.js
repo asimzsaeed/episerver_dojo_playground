@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/contentediting/command/ContentAreaCommands",["dojo/_base/array","dojo/_base/declare","dojo/Stateful","./BlockRemove","./BlockEdit","./MoveVisibleToPrevious","./MoveVisibleToNext","./Personalize","./SelectDisplayOption"],function(_1,_2,_3,_4,_5,_6,_7,_8,_9){return _2([_3],{commands:null,constructor:function(){this.commands=[new _5(),new _9(),new _8(),new _6(),new _7(),new _4()];},_modelSetter:function(_a){this.model=_a;_1.forEach(this.commands,function(_b){_b.set("model",_a);});}});});

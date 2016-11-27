@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" Inherits="EPiServer.Shell.Web.UI.MasterPageBase" %>
+<%@ Assembly Name="EPiServer.Shell.UI" %>
+
+<%@ Import Namespace="EPiServer.Framework.Web.Mvc.Html"%>
+<%@ Import Namespace="EPiServer.Framework.Web.Resources"%>
+<%@ Import Namespace="EPiServer.Shell" %>
+<%@ Import Namespace="EPiServer.Shell.Web.Mvc.Html" %>
+
+<!DOCTYPE html>
+<html>
+    <head runat="server">
+        <%-- Set IE=edge to make IE use its best rendering mode instead falling back to compatibility mode based on intranet zone, etc. --%>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    
+        <%= Page.ClientResources("ShellCore", new[] { ClientResourceType.Style }) %>
+        <%-- //TODO: Should only be loaded by the dashboard --%>
+        <%= Page.ClientResources("DojoDashboardCompatibility", new[] { ClientResourceType.Style }) %>
+
+        <asp:ContentPlaceHolder ID="HeaderContent" runat="server" />
+    </head>
+    <body class="<%: Html.ThemeClass() %>">
+    
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    
+        <%= Page.ConfigureDojo(false, true, true) %>    
+        <script type="text/javascript" src="<%= Paths.ToShellClientResource("ClientResources/dojo/dojo.js") %>"></script>
+        <script type="text/javascript" src="<%= Paths.ToShellClientResource("ClientResources/epi/epi.js") %>"></script>
+
+        <%= Page.ClientResources("DojoDashboardCompatibility", new[] { ClientResourceType.Script }) %>
+        <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
+
+    </body>
+</html>

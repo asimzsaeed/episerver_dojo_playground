@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" Inherits="EPiServer.Shell.Web.UI.MasterPageBase" %>
+<%@ Import Namespace="System.Threading"%>
+<%@ Import Namespace="EPiServer.Framework.Web.Resources"%>
+<%@ Import Namespace="EPiServer.Framework.Web.Mvc.Html"%>
+<%@ Import Namespace="EPiServer.Shell"%>
+<%@ Import Namespace="EPiServer.Shell.Web.UI"%>
+<%@ Import Namespace="EPiServer.Shell.Web.Mvc.Html" %>
+<%@ Import Namespace="EPiServer.Shell.Navigation" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        html, body
+        {
+            height: 100%; 
+        }
+              
+    </style>
+    <%--    
+        Need a container control around everything that uses Response.Write in the head, 
+        since WebForm pages modifies the control collection in the head control
+    --%>    
+    <title><%= Html.Encode(ViewData["Title"]) %></title>
+
+    <asp:PlaceHolder runat="server">
+        
+        <!-- Shell -->
+        <%=Page.ClientResources("Dojo", new [] { ClientResourceType.Style  })%>
+        <%=Page.ClientResources("ShellCore")%>
+        <%=Page.ClientResources("ShellWidgets")%>
+             
+         <!-- LightTheme -->
+        <%=Page.ClientResources("ShellCoreLightTheme")%>
+        <%=Page.ClientResources("ShellWidgetsLightTheme")%>
+        
+        <!-- Navigation -->
+        <%=Page.ClientResources("Navigation")%>
+        
+        <!-- Shell init script -->
+        <%= Html.ShellInitializationScript() %>
+               
+        <!--Client resources-->
+        <script type="text/javascript" src="<%= Url.Action("GetLocalizationResource", "Resources", new {typeName = "EPiServer.Shell.Resources.Texts", culture = Thread.CurrentThread.CurrentUICulture, moduleArea = "Shell" })%>"></script>
+        <script type="text/javascript" src="<%= Url.Action("GetLocalizationResource", "Resources", new {typeName = "EPiServer.Shell.UI.Resources.DatePicker", culture = Thread.CurrentThread.CurrentUICulture, moduleArea = "Shell" })%>"></script>
+        <script type="text/javascript" src="<%= Url.Action("GetLocalizationResource", "Resources", new {typeName = "EPiServer.Shell.UI.Resources.JQueryValidate", culture = Thread.CurrentThread.CurrentUICulture, moduleArea = "Shell" })%>"></script>        
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="<%: Html.ThemeClass() %>">
+<!-- Wrapper - Application base layout -->
+<div id="epi-globalDocument">
+	<!-- Header -->
+	<asp:ContentPlaceHolder ID="NavigationContent" runat="server">
+	    <%= Html.GlobalMenu()%>
+    </asp:ContentPlaceHolder>
+	<!-- Active/selected Application -->
+	<div id="epi-application">
+        <!-- Application Main Area -->
+        <div id="epi-applicationBody"><asp:ContentPlaceHolder ID="MainContent" runat="server" /></div>
+	</div>
+</div>
+</body>
+</html>

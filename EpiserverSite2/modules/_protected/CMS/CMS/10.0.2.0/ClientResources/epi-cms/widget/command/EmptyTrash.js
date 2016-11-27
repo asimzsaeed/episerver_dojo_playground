@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/widget/command/EmptyTrash",["dojo/_base/declare","epi/shell/command/_Command"],function(_1,_2){return _1([_2],{label:null,tooltip:null,trashId:null,_execute:function(){if(this.canExecute){this.model.emptyTrash(this.trashId);}},_onModelChange:function(){var _3=!!this.trashId;this.set("canExecute",_3);}});});

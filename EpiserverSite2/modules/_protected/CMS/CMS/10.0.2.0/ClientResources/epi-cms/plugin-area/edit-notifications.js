@@ -1,0 +1,2 @@
+//>>built
+define("epi-cms/plugin-area/edit-notifications",["epi/PluginArea","epi-cms/contentediting/ContentReferencesNotification","epi-cms/contentediting/LanguageNotification","epi-cms/contentediting/ExpirationNotification","epi-cms/contentediting/FuturePublishingDateNotification"],function(_1,_2,_3,_4,_5){var _6=new _1("epi-cms/edit/notifications[]");_6.add(_2);_6.add(_3);_6.add(_4);_6.add(_5);return _6;});

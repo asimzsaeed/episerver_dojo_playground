@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" Inherits="EPiServer.Shell.Web.UI.MasterPageBase" MasterPageFile="Site.Master" %>
+<%@ Import Namespace="EPiServer.Shell" %>
+<%@ Import Namespace="EPiServer.Shell.Navigation" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
+    <script type="text/javascript" src="<%= Paths.ToClientResource("Shell", "ClientResources/EPi/Views/Settings/Settings.js") %>"></script>
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+        <div id="epi-applicationBodySidebar">
+                <%= Html.LocalMenu(MenuPaths.UserSettings)%>
+        </div>
+        <div id="epi-applicationBodyMainWrapper">
+            <div id="epi-applicationBodyMain">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>
+        </div>
+</asp:Content>

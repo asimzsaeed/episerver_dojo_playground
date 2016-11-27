@@ -1,0 +1,40 @@
+﻿ .cms-externalLinks-table 
+ {
+ 	table-layout:fixed;
+ }
+
+ .cms-externalLinks-table td
+ {
+     white-space: nowrap;
+     overflow:hidden;
+ }
+ 
+ .cms-externalLinks-pager
+ {
+     text-align: center;
+ }
+ 
+ .cms-exteranlLinks-pager-info,
+ .cms-exteranlLinks-pager-paging
+ {
+     white-space: nowrap;
+     width: 30%;
+     display: inline-block;
+     margin: 1em;
+ }
+ 
+ .cms-externalLinks,
+ .cms-exteranlLinks-pager-link,
+ .cms-exteranlLinks-pager-split
+ {
+ }
+ 
+ .cms-exteranlLinks-pager-prev,
+ .cms-exteranlLinks-pager-next,
+ .cms-exteranlLinks-pager-current
+ {
+     font-weight: bold;
+ }
+ 
+ 
+ 

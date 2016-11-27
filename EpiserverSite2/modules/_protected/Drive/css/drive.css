@@ -1,0 +1,184 @@
+﻿
+#viz .viz_bottom_bar {
+    background: #1f2532;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 -2px 9px rgba(31,37,50,.15);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#viz .viz_bottom_bar .list-item, #viz .viz_bottom_bar .drive-navigation {
+    float: left;
+}
+
+#viz .viz_bottom_bar .drive-navigation .brand {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+#viz .viz_bottom_bar .drive-navigation .brand a {
+    background-position: -261px -285px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 27px;
+    height: 23px;
+    background-image: url(https://projects.invisionapp.com/assets/apps/common/img/console-sprite.png?v=1468862812737);
+    text-indent: -9999px;
+    border: 19px solid #1f2532;
+    border-left-width: 25px;
+    padding-right: 0;
+}
+
+#viz .viz_bottom_bar .drive-navigation .list-item {
+    margin: 0 10px 0 0;
+    max-width: 160px;
+    position: relative;
+    padding: 0 0 0 35px;
+}
+
+#viz .viz_bottom_bar .drive-navigation a.active, #viz .viz_bottom_bar .drive-navigation a:hover {
+    color: #aab2c4;
+}
+
+#viz .viz_bottom_bar .drive-navigation a {
+    color: #99a0af;
+    font-size: 13px;
+    line-height: 62px;
+    position: relative;
+    padding: 0 18px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+#viz .viz_bottom_bar .drive-navigation .list-item:before {
+    content: "";
+    background-position: -338px -285px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 7px;
+    height: 12px;
+    background-image: url(https://projects.invisionapp.com/assets/apps/common/img/console-sprite.png?v=1468862812737);
+    top: 26px;
+    left: 0;
+    position: absolute;
+}
+
+#viz .viz_bottom_bar.is-inspect-enabled .console-modes {
+    width: 325px;
+    margin-left: -165px;
+}
+
+#viz .viz_bottom_bar .console-modes {
+    width: 260px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -132px;
+    background: #1c222e;
+    border: 1px solid #191e29;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#viz .viz_bottom_bar .console-modes .preview-mode.active a, #viz .viz_bottom_bar .console-modes .preview-mode.active a:hover, #viz .viz_bottom_bar .console-modes .preview-mode.highlight a, #viz .viz_bottom_bar .console-modes .preview-mode.highlight a:hover {
+    border-color: #61d079;
+    opacity: 1;
+}
+
+#viz .viz_bottom_bar .console-modes a {
+    height: 60px;
+    width: 65px;
+    border-top: 2px solid #1c222e;
+    display: block;
+    text-indent: -9999px;
+    position: relative;
+    -webkit-transition: border .2s ease,opacity .2s ease;
+    transition: border .2s ease,opacity .2s ease;
+    cursor: pointer;
+    opacity: .7;
+}
+
+#viz .viz_bottom_bar .console-modes .preview-mode.active a:before, #viz .viz_bottom_bar .console-modes .preview-mode.active a:hover:before, #viz .viz_bottom_bar .console-modes .preview-mode.highlight a:before, #viz .viz_bottom_bar .console-modes .preview-mode.highlight a:hover:before {
+    background-position: -101px -506px;
+    background-image: url(https://projects.invisionapp.com/assets/apps/common/img/console-sprite.png?v=1468862812737);
+}
+
+#viz .preview-mode a {
+    background-position: -25px -506px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 26px;
+    height: 18px;
+    background-image: url(https://projects.invisionapp.com/assets/apps/common/img/console-sprite.png?v=1468862812737);
+    margin: 20px 0 0 -13px;
+    overflow: visible;
+}
+
+#viz .build-mode a {
+    background-position: -25px -363px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 22px;
+    background-image: url(https://projects.invisionapp.com/assets/apps/common/img/console-sprite.png?v=1468862812737);
+    margin: 20px 0 0 -12px;
+    overflow: visible;
+}
+
+#viz .comment-mode a {
+    background-position: -25px -506px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 26px;
+    height: 18px;
+    background-image: url(https://projects.invisionapp.com/assets/apps/common/img/console-sprite.png?v=1468862812737);
+    margin: 20px 0 0 -13px;
+    overflow: visible;
+}
+
+#viz .stats-mode a {
+    background-position: -25px -363px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 22px;
+    background-image: url(https://projects.invisionapp.com/assets/apps/common/img/console-sprite.png?v=1468862812737);
+    margin: 20px 0 0 -12px;
+    overflow: visible;
+}
+
+
+#viz .viz_bottom_bar .settings {
+    float: right;
+    margin: 0 11px 0 0;
+}
+
+.vizob-drive .build-mode-container {
+    display:none;
+    margin: 0;
+    top:0;
+    position:absolute;
+    background: #f9f9fb;
+    font-family: "Open Sans",open-sans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    color: #5f697a;
+}
+
+.vizob-drive .build-mode-container.show {
+    display: block;
+}
